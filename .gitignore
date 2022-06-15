@@ -1,129 +1,33 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+import banner as banner
+from pystyle import Colors, Colorate, Center, Anime
 
-# C extensions
-*.so
+print(Colorate.Vertical(Colors.red_to_yellow, """
+     ...     ...           ..      .                  ..                            ...         
+  .=*8888n.."%888:      x88f` `..x88. .>    .H88x.  :~)88:   x8h.     x8.       .x888888hx    : 
+ X    ?8888f '8888    :8888   xf`*8888%    x888888X ~:8888 :88888> .x8888x.    d88888888888hxx  
+ 88x. '8888X  8888>  :8888f .888  `"`     ~   "8888X  %88"  `8888   `8888f    8" ... `"*8888%`  
+'8888k 8888X  '"*8h. 88888' X8888. >"8x        X8888         8888    8888'   !  "   ` .xnxx.    
+ "8888 X888X .xH8    88888  ?88888< 888>    .xxX8888xxxd>    8888    8888    X X   .H8888888%:  
+   `8" X888!:888X    88888   "88888 "8%    :88888888888"     8888    8888    X 'hn8888888*"   > 
+  =~`  X888 X888X    88888 '  `8888>       ~   '8888         8888    8888    X: `*88888%`     ! 
+   :h. X8*` !888X    `8888> %  X88!       xx.  X8888:    .   8888    8888    '8h.. ``     ..x8> 
+  X888xX"   '8888..:  `888X  `~""`   :   X888  X88888x.x"  -n88888x>"88888x-  `88888888888888f  
+:~`888f     '*888*"     "88k.      .~    X88% : '%8888"      `%888"  4888!`    '%8888888888*"   
+    ""        `"`         `""*==~~`       "*=~    `""          `"      ""         ^"****""`     
+                                                                                                
+                                                                                                
+                                                                                                
+""", 1))
+from pystyle import Write, Colors
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+name = Write.Input("Enter your username here -> ", Colors.red_to_purple, interval=.0525)
+Write.Print(f"TEST YOUR BRUTE FORCE   "
+           
+            f", {name}!", Colors.blue_to_green, interval=.0550)
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-.python-version
-
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
-__pypackages__/
-
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
+MDP="python3405"
+user_input = input("entrez le mot de passe :")
+if MDP == user_input:
+    print("entrée valide")
+else:
+    print ("entrée invalide, ré-essayez")
